@@ -1,4 +1,4 @@
 var helloworld = require('./helloworld');
 
-// document.body.appendChild(helloworld());
-console.log(helloworld());
+document.body.appendChild(helloworld());
+// console.log(helloworld());
