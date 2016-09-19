@@ -1,14 +1,18 @@
 require ('./main.scss');
 
-// var cats = require('./cats');
+var cats = require('./cats');
 
-var element = document.createElement('div');
-element.innerHTML = 'Byayats';
-document.body.appendChild(element);
+var React = require('react');
+var ReactDOM = require('react-dom');
 
-// var catDiv = document.createElement('div');
-// document.body.appendChild(catDiv);
+// Create App Component
 
-// for (var cat of cats) {
-//     catDiv.innerHTML += cat + " and ";
-// }
+var App = React.createClass({
+    render : function() {
+        return (
+            <div className="fruit">Apples</div>
+        )
+    }
+});
+
+ReactDOM.render(<App/>, document.querySelector('#bananas'));
