@@ -1,16 +1,17 @@
 var webpack = require('webpack');
 
 module.exports = {
-     entry: './app/index.js',
+     entry: './app/index',
      output: {
          path: './build',
          filename: 'app.bundle.js'
      },
      module: {
-        loaders: [{
-            test: /\.js$/,
-            exclude: /node_modules/,
-            loader: 'babel-loader'
-        }]
+        loaders: [
+            {
+                test: /\.scss$/,
+                loaders: ['style', 'css', 'sass']
+            }
+        ]
      }
  };

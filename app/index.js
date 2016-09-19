@@ -1,13 +1,14 @@
-var cats = require('./cats');
+require ('./main.scss');
 
-var element = document.createElement('h1');
-element.innerHTML = 'Cats';
+// var cats = require('./cats');
+
+var element = document.createElement('div');
+element.innerHTML = 'Byayats';
 document.body.appendChild(element);
 
-var catDiv = document.createElement('div'); 
-document.body.appendChild(catDiv);
+// var catDiv = document.createElement('div');
+// document.body.appendChild(catDiv);
 
-var cats = ['dave', 'henry', 'martha'];
-for (var cat of cats) {
-    catDiv.innerHTML += cat;
-}
+// for (var cat of cats) {
+//     catDiv.innerHTML += cat + " and ";
+// }
