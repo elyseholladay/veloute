@@ -1,0 +1,18 @@
+{
+  "name": "veloute",
+  "version": "1.0.0",
+  "description": "A light demo app using Roux.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elyse Holladay Cherewaty",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  }
+}
