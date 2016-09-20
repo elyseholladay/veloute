@@ -10,9 +10,13 @@ var ReactDOM = require('react-dom');
 var App = React.createClass({
     render : function() {
         return (
-            <div className="fruit">Apples</div>
+            <div className="fruit">
+                My favorite fruit is&nbsp;
+                {this.props.fruit}.
+            </div>
         )
     }
 });
 
-ReactDOM.render(<App/>, document.querySelector('#bananas'));
+ReactDOM.render(<App fruit='strawberries'/>, document.querySelector('#bananas'));
+
